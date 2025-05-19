@@ -12,7 +12,7 @@ const app = express();
 const port = process.env.PORT || 4000
 connectdb();
 
-const allowedOrigins = ['https://pixelcode.vercel.app']
+const allowedOrigins = ['https://pixelcode.vercel.app', 'http://localhost:5173']
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({origin: allowedOrigins, credentials: true}))
