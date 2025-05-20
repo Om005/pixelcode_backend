@@ -106,7 +106,7 @@ export const WECOME_EMAIL_TEMPLATE = `<!DOCTYPE html>
             <p>Thank you for joining PIXELCODE! We're here to make coding seamless, efficient, and enjoyable. Here's a glimpse of what awaits you:</p>
             Welcome to PIXELCODE, a flexible code editor for any programming language. Write, save, and manage your code with ease using its intuitive interface and powerful features.
             <p>Ready to take your coding experience to the next level? Click the button below to start exploring PIXELCODE today!</p>
-            <a href="https://pixelcode-nine.vercel.app/" class="cta-button">Get Started Now</a>
+            <a href="https://pixelcode-nine.vercel.app/" target="_blank" class="cta-button">Get Started Now</a>
         </div>
         <div class="footer">
             <p>Have questions? <a href="#">Contact Support</a></p>
