@@ -32,7 +32,7 @@ app.use('/api/chat', chatRouter)
 app.listen(port, ()=>{
     console.log(`Server is running on port ${port}`);
     setInterval(() => {
-        axios.get('https://myapp.onrender.com/health')
+        axios.get('https://pixelcode.onrender.com/health')
             .then(res => {
                 console.log(`Health check successful: ${res.status}`);
             })
