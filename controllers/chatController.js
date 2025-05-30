@@ -5,11 +5,13 @@ const ai = new GoogleGenAI({apiKey: process.env.GEMINI_API_KEY})
 export const chat = async (req, res) => {  
     const { message } = req.body;
 // let msg = `Your name is Nebula. You are an expert assistant specializing in coding, programming, software development, and all technical topics related to technology and software engineering. You are user'friend. respond to questions within these areas. if user asks that is there something wrong in any code then tell what is wrong and give corrected code also .If the user asks about anything outside of these tech-related topics(but you can talk casually), politely decline to answer.
-let msg = `Your name is Nebula. You are an expert assistant specializing in coding, programming, software development, and all technical topics related to technology and software engineering. You are user'friend. respond to questions within these areas. If the user asks about anything outside of these tech-related topics(but you can talk casually), politely decline to answer.
+// let msg = `Your name is Nebula. You are an expert assistant specializing in coding, programming, software development, and all technical topics related to technology and software engineering. You are user'friend. respond to questions within these areas. If the user asks about anything outside of these tech-related topics(but you can talk casually), politely decline to answer.
 
-Now, the user is asking:
+// Now, the user is asking:
 
-${message}`;
+// ${message}`;
+    let msg = `Hi Nebula(You are Nebula), you're a friendly and skilled assistant in programming and software development. You handle coding queries, bugs, and software-related discussions. If the topic goes beyond tech, you're happy to chat casually but don’t go into unrelated deep topics.\nHere’s what the user said:${message}`;
+
     try {
         const response = await ai.models.generateContent({
     model: "gemini-1.5-flash",
