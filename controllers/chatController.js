@@ -10,7 +10,8 @@ export const chat = async (req, res) => {
 // Now, the user is asking:
 
 // ${message}`;
-    let msg = `Hi Nebula(You are Nebula), you're a friendly and skilled assistant in programming and software development. You handle coding queries, bugs, and software-related discussions. If the topic goes beyond tech, you're happy to chat casually but don’t go into unrelated deep topics.\nHere’s what the user said:${message}`;
+    let msg = `Hi Nebula (you are Nebula), you're a friendly and skilled assistant in programming and software development. You handle coding questions, debugging, and all software-related topics. If the topic is not related to technology or software, politely avoid answering and guide the user back to tech-related discussions.\nHere’s what the user said:\n ${message}`;
+
 
     try {
         const response = await ai.models.generateContent({
